@@ -1,0 +1,43 @@
+.navbar{
+    background-color: aliceblue;
+    transition-duration: 0.3s;
+}
+.navbar.active {
+    background-color: rgb(0, 0, 0);
+}
+.nav-data{
+    color: rgb(24, 57, 119);
+    margin-right: 20px;
+
+}
+.nav-data:hover{
+    color: rgb(171, 83, 5);
+}
+.nav-data.curr{
+    color: rgb(180, 180, 180);
+    transition-duration: 0.5s;
+}
+.nav-data.curr:hover{
+    color: rgb(171, 83, 5);
+}
+.responsive{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+.btn{
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+
+}

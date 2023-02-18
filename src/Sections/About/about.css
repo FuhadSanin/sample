@@ -1,0 +1,129 @@
+#about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-bottom: 200px;
+}
+#about .col-1{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#about .col-1 .img{
+    background-image: url(../../image/about.JPEG);
+    width: 400px;
+    height: 550px;
+    background-size: cover;
+    margin-left: 150px;
+    margin-top: 150px;
+    border-radius: 50px;
+}
+.underline{
+    width: 64px;
+    height: 8px;
+    background: linear-gradient(270deg, rgb(88, 19, 199) 0%, rgb(0, 170, 196) 100%);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+#about .col-2{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#about .col-2-data h1{
+    font-weight:bolder;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+#about .col-2-data p{
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+#about .col-2-data{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .tab-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#about .tab-title h5::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #00008b;
+    display: block;
+    transition: .5s;
+}
+
+#about .tab-title h5:hover::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: #0000da;
+    display: block;
+}
+.tab_content ul li{
+    list-style: none;
+    margin: 20px 0px;
+}
+.tab_content ul li span{
+    color: #0000da;
+    font-size: 15px;
+}
+@media only screen and (max-width:600px) {
+    #about{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+
+    #about .col-1{
+        width: 100%;
+        height: fit-content;
+        margin-top: 50px;
+    }
+    #about .col-1 .img{
+        display: none;
+    }
+    #about .col-1 .sm-img{
+        background-image: url(../../image/banner.JPEG);
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        box-shadow: inset 0 0 0 9px rgb(121, 121, 121);
+        animation: profile_animate 8s ease-in-out infinite 0s;
+    }
+    @keyframes profile_animate{
+        0%{
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+        50%{
+            border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+        }
+        100%{
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+    }
+    #about .col-2{
+        width: 100%;
+    }
+    #about .col-2-data{
+        width: 80%;
+    }
+}

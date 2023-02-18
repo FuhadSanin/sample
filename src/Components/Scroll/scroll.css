@@ -1,0 +1,15 @@
+.scroll button{
+    background-color: #006cdf!important;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 20px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 40px;
+    right: 40px;
+}
